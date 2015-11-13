@@ -10,5 +10,5 @@ post "/calculate" do
   second = params[:second_number].to_f
   operation = params[:operation]
   result = Calculator.new(first,second,operation).calculate
-  "#{first} + #{second} = #{result}"
+  "#{first} #{operation} #{second} = #{result}"
 end

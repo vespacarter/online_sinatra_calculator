@@ -4,13 +4,13 @@ class Calculator
 		@second_number = second_number
 		@operation = operation
 	end
-	
+
 	def calculate()
 		result = case @operation
-		when "add" then add()
-		when "substract" then substract()
-		when "multiply" then multiply()
-		when "divide" then divide()
+		when "+" then add()
+		when "-" then substract()
+		when "*" then multiply()
+		when "/" then divide()
 		end
 		result
 	end
